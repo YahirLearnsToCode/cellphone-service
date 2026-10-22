@@ -9,6 +9,8 @@ public class CellPhoneApplication {
 
         CellPhone cellPhone1 = new CellPhone(); //exercise 2
 
+        CellPhone cellphone2 = new CellPhone(242424245, "Iphone 16", "ATT", "3477557555", "Dave"); // exercise 3
+
         int serialNumber = setSerialNumber(myScanner);
         cellPhone.setSerialNumber(serialNumber);
 
@@ -44,9 +46,11 @@ public class CellPhoneApplication {
         //exercise 2
         display(cellPhone);
         display(cellPhone1);
+        display(cellphone2); // exercise 3
 
         cellPhone.dial(cellPhone1.getPhoneNumber());
         cellPhone1.dial(cellPhone.getPhoneNumber());
+        cellPhone1.dial(cellphone2.getPhoneNumber()); // exercise 3
     }
 
     //exercise 2
